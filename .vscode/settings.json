@@ -56,5 +56,8 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "Starstream Sentinel.sln"
+    "dotnet.defaultSolution": "Starstream Sentinel.sln",
+    "cSpell.words": [
+        "Behaviour"
+    ]
 }
