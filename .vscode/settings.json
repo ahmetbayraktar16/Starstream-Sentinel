@@ -58,6 +58,7 @@
     },
     "dotnet.defaultSolution": "Starstream Sentinel.sln",
     "cSpell.words": [
-        "Behaviour"
+        "Behaviour",
+        "Mathf"
     ]
 }
