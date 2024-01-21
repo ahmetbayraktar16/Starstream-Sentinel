@@ -59,6 +59,7 @@
     "dotnet.defaultSolution": "Starstream Sentinel.sln",
     "cSpell.words": [
         "Behaviour",
-        "Mathf"
+        "Mathf",
+        "Scriptable"
     ]
 }
