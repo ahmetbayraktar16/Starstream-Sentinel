@@ -2,37 +2,39 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "Wave Config", fileName = "New Wave Config")]
+[CreateAssetMenu(menuName = "Wave Config", fileName = "New Wave Config")] 
 public class WaveConfigSO : ScriptableObject
 {
-    [SerializeField] List<GameObject> enemyPrefab;
+    [SerializeField] List<GameObject> enemyPrefabs;
     [SerializeField] Transform pathPrefab;
     [SerializeField] float moveSpeed = 5f;
     [SerializeField] float timeBetweenEnemySpawns = 1f;
-    [SerializeField] float spawnTimeVariance = 0.5f;
-    [SerializeField] float minSpawnTime = 0.2f;
+    [SerializeField] float spawnTimeVariance = 0f;
+    [SerializeField] float minimumSpawnTime = 0.2f;
 
-    public Transform GetStartingWayPoint()
-    {
-        return pathPrefab.GetChild(0);
-    }
     public int GetEnemyCount()
     {
-        return enemyPrefab.Count;
+        return enemyPrefabs.Count;
     }
 
     public GameObject GetEnemyPrefab(int index)
     {
-        return enemyPrefab[index];
+        return enemyPrefabs[index];
     }
-    public List<Transform> GetWayPoints()
+
+    public Transform GetStartingWaypoint()
     {
-        List<Transform> wayPoints = new List<Transform>();
-        foreach (Transform child in pathPrefab)
+        return pathPrefab.GetChild(0);
+    }
+
+    public List<Transform> GetWaypoints()
+    {
+        List<Transform> waypoints = new List<Transform>();
+        foreach(Transform child in pathPrefab)
         {
-            wayPoints.Add(child);
+            waypoints.Add(child);
         }
-        return wayPoints;
+        return waypoints;
     }
 
     public float GetMoveSpeed()
@@ -43,6 +45,6 @@ public class WaveConfigSO : ScriptableObject
     public float GetRandomSpawnTime()
     {
         float spawnTime = Random.Range(timeBetweenEnemySpawns - spawnTimeVariance, timeBetweenEnemySpawns + spawnTimeVariance);
-        return Mathf.Clamp(spawnTime, minSpawnTime, float.MaxValue);
+        return Mathf.Clamp(spawnTime, minimumSpawnTime, float.MaxValue);
     }
 }
