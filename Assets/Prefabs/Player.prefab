@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: -1286761853930076988}
   - component: {fileID: 4084593910283356193}
   - component: {fileID: 1059064744101913775}
+  - component: {fileID: 7794517962443471244}
   m_Layer: 6
   m_Name: Player
   m_TagString: Untagged
@@ -196,7 +197,7 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.014769673, y: 0}
-  m_Size: {x: 1.2696712, y: 3.9175}
+  m_Size: {x: 0.9193542, y: 3.9175}
   m_Direction: 0
 --- !u!114 &1059064744101913775
 MonoBehaviour:
@@ -211,3 +212,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 50
+--- !u!114 &7794517962443471244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1126690173992089638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14751d64d54b17041a66c3002141a8c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 5756404058853393474, guid: c2b6692ab26acbb449d0a0feff0c53a8, type: 3}
+  projectileSpeed: 10
+  projectileLifetime: 5
+  firingRate: 0.2
+  isFiring: 0
