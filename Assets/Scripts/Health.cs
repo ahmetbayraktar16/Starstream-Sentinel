@@ -10,7 +10,7 @@ public class Health : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other)
     {
         DamageDealer damageDealer = other.GetComponent<DamageDealer>();
-        if (damageDealer != null)
+        if (damageDealer != null  & other.tag != "Player")
         {
             TakeDamage(damageDealer.GetDamage());
             damageDealer.Hit();

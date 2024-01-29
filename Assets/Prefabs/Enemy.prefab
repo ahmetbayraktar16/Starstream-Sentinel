@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 7289410970118729072}
   - component: {fileID: 7329743572774242830}
   - component: {fileID: -4821591935505988177}
+  - component: {fileID: 6663795390964670351}
   m_Layer: 7
   m_Name: Enemy
   m_TagString: Untagged
@@ -31,7 +32,7 @@ Transform:
   m_GameObject: {fileID: 9165174424446639001}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 8, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -160,8 +161,8 @@ CapsuleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.12901661, y: 3.609793e-15}
-  m_Size: {x: 2.0219662, y: 2.0219662}
+  m_Offset: {x: 0.04846263, y: -0.026851296}
+  m_Size: {x: 1.8915453, y: 1.8915453}
   m_Direction: 0
 --- !u!114 &7329743572774242830
 MonoBehaviour:
@@ -188,4 +189,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ebf00d2a9fbcdb438a8236d283e5630, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 25
+  damage: 10
+--- !u!114 &6663795390964670351
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9165174424446639001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14751d64d54b17041a66c3002141a8c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 1227884738182680, guid: 556f2eb4bc9000c42a11abc910131c24, type: 3}
+  projectileSpeed: 10
+  projectileLifetime: 5
+  firingRate: 1
+  useAI: 1
+  fireRatingVariance: 0.5
+  minFiringRate: 0.1
+  isFiring: 0

@@ -12,7 +12,8 @@ GameObject:
   - component: {fileID: 212860271146868360}
   - component: {fileID: 9190936347579141073}
   - component: {fileID: 60954202220465662}
-  m_Layer: 0
+  - component: {fileID: 3067634106631437531}
+  m_Layer: 6
   m_Name: Projectile_Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -142,7 +143,7 @@ PolygonCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -190,3 +191,16 @@ PolygonCollider2D:
       - {x: 0.29, y: -1.38}
       - {x: 0.26999998, y: -0.78999996}
   m_UseDelaunayMesh: 0
+--- !u!114 &3067634106631437531
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1620099141931234}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ebf00d2a9fbcdb438a8236d283e5630, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10
