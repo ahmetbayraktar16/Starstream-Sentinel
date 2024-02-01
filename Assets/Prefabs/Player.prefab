@@ -196,8 +196,8 @@ CapsuleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.014769673, y: 0}
-  m_Size: {x: 0.9193542, y: 3.9175}
+  m_Offset: {x: 0.017374039, y: 0}
+  m_Size: {x: 1.2614825, y: 3.9175}
   m_Direction: 0
 --- !u!114 &1059064744101913775
 MonoBehaviour:
@@ -213,6 +213,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 50
   hitEffect: {fileID: 3639716594043911355, guid: e69b1e7e76143e94b8cda395faef17b9, type: 3}
+  applyCameraShake: 1
 --- !u!114 &7794517962443471244
 MonoBehaviour:
   m_ObjectHideFlags: 0
