@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 7352848518523502529}
   - component: {fileID: 4770466207238137795}
-  - component: {fileID: 4454344062781785503}
   - component: {fileID: 4936853211789676622}
   - component: {fileID: 3439911564780973167}
+  - component: {fileID: 4454344062781785503}
   - component: {fileID: -5799233639606222666}
   - component: {fileID: 3289507623232629480}
   - component: {fileID: -4995310808827255396}
@@ -77,7 +77,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 973934493
-  m_SortingLayer: 2
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300002, guid: 76ae66d8633c3ad40bb908b654d63da1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -90,18 +90,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &4454344062781785503
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8083530354223374488}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ab2aac3550b4f0942b683b04c074e93b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!50 &4936853211789676622
 Rigidbody2D:
   serializedVersion: 4
@@ -164,6 +152,18 @@ CapsuleCollider2D:
   m_Offset: {x: -0.0042830706, y: -0}
   m_Size: {x: 0.640265, y: 2.835}
   m_Direction: 0
+--- !u!114 &4454344062781785503
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8083530354223374488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab2aac3550b4f0942b683b04c074e93b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &-5799233639606222666
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -177,6 +177,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 50
+  hitEffect: {fileID: 3639716594043911355, guid: e69b1e7e76143e94b8cda395faef17b9, type: 3}
 --- !u!114 &3289507623232629480
 MonoBehaviour:
   m_ObjectHideFlags: 0

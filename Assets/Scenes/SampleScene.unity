@@ -329,22 +329,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1059064744101913775, guid: bbbe23a92f8120848bc6bc8b3cc92d91, type: 3}
-      propertyPath: health
-      value: 50
-      objectReference: {fileID: 0}
     - target: {fileID: 1126690173992089638, guid: bbbe23a92f8120848bc6bc8b3cc92d91, type: 3}
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 1126690173992089638, guid: bbbe23a92f8120848bc6bc8b3cc92d91, type: 3}
-      propertyPath: m_TagString
-      value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 7794517962443471244, guid: bbbe23a92f8120848bc6bc8b3cc92d91, type: 3}
-      propertyPath: projectilePrefab
-      value: 
-      objectReference: {fileID: 1620099141931234, guid: 1e16ea26925190d4bb4582735a69a3ac, type: 3}
     - target: {fileID: 8411368032574398025, guid: bbbe23a92f8120848bc6bc8b3cc92d91, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
