@@ -135,8 +135,8 @@ MonoBehaviour:
   moveSpeed: 5
   paddingLeft: 1
   paddingRight: 1
-  paddingTop: 5
-  paddingBottom: 2
+  paddingTop: 10
+  paddingBottom: 4
 --- !u!50 &-1286761853930076988
 Rigidbody2D:
   serializedVersion: 4
