@@ -809,6 +809,7 @@ GameObject:
   - component: {fileID: 839793198}
   - component: {fileID: 839793197}
   - component: {fileID: 839793196}
+  - component: {fileID: 839793200}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -902,6 +903,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &839793200
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 839793195}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a00510b5a59bd9b4bad660a945a39e2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreText: {fileID: 387330895}
 --- !u!1 &882884300
 GameObject:
   m_ObjectHideFlags: 0
@@ -1412,7 +1426,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 639305617308864048, guid: 78aa434af92363c4b83dd135db4c7f6b, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6858186876989890632, guid: 78aa434af92363c4b83dd135db4c7f6b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1655,8 +1669,8 @@ SceneRoots:
   m_Roots:
   - {fileID: 1257194367}
   - {fileID: 205263692}
-  - {fileID: 1493284979}
   - {fileID: 839793199}
   - {fileID: 397440794}
   - {fileID: 158980575}
   - {fileID: 1730407396}
+  - {fileID: 1493284979}
